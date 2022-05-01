@@ -1,5 +1,4 @@
--hosts: Demo
- user: ansible
+-hosts: all
  become: yes
  connection: ssh
  vars:
