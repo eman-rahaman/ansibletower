@@ -1,0 +1,9 @@
+-hosts: Demo
+ user: ansible
+ become: yes
+ connection: ssh
+ vars:
+   pkgname: vsftpd
+ tasks:
+   - name: install vsftpd
+     action: yum name="{{pkgname}}" state=installed
